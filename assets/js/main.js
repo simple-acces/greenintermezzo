@@ -259,5 +259,7 @@
 
 window.octoboot_before_save = function(done) {
 	window.scrollTo(0,0)
+	$('#navPanelToggle').remove()
+	$('#wrapper > .bg').remove()
 	setTimeout(done, 500)
 }
